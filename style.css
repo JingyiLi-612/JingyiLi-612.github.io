@@ -10,8 +10,8 @@ body {
 
 /* Container */
 #container {
-    max-width: 800px;
-    margin: auto;
+    max-width: 1200px; /* Increase the width (default might be 800px) */
+    margin: auto; /* Center the container */
     padding: 20px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -43,30 +43,49 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Header */
+/* Header Styling */
 header {
-    text-align: center;
     margin-bottom: 20px;
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin: 10px 0;
+.header-content {
+    display: flex;
+    align-items: center; /* Align photo and text vertically */
+    justify-content: start; /* Align content to the left */
+    gap: 20px; /* Space between the photo and text */
 }
 
-header p {
-    font-size: 1.2em;
-    color: #555;
+.photo-content {
+    flex: 0 0 auto; /* Prevent photo from stretching */
 }
 
 .profile-photo {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid #ddd;
-    margin: 10px auto;
-    display: block;
+    width: 200px; /* Increase the width */
+    height: 200px; /* Match height to width for a perfect circle */
+    border-radius: 50%; /* Keep the photo circular */
+    border: 3px solid #ddd; /* Optional: Border styling */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for aesthetics */
 }
+
+
+.text-content {
+    flex: 1; /* Allow text to take up remaining space */
+    text-align: left; /* Align text to the left */
+}
+
+.text-content h1 {
+    margin: 0;
+    font-size: 2em; /* Adjust font size for the name */
+    color: #333;
+}
+
+.text-content p {
+    margin: 5px 0 0; /* Add spacing between lines */
+    font-size: 1.2em; /* Adjust font size for details */
+    color: #555;
+}
+
+
 
 /* Section Styling */
 section {
@@ -90,10 +109,80 @@ section ul li {
     margin-bottom: 5px;
 }
 
+/* Publications */
+.publications-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Space between the image and the content */
+}
+
+.publications-image {
+    flex: 0 0 auto; /* Prevent the image from stretching */
+}
+
+.publication-photo {
+    width: 150px; /* Fixed width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.teaching-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 20px 0;
+}
+
+.teaching-list li {
+    margin-bottom: 10px; /* Add space between lines */
+    font-size: 1em;
+    color: #333;
+}
+
+.teaching-list li a {
+    text-decoration: none; /* Remove underline */
+    color: #0056b3; /* Link color */
+    font-weight: bold;
+}
+
+.teaching-list li a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #003f7f; /* Darker link color on hover */
+}
+
+
 /* Footer */
 footer {
     text-align: center;
+    margin-top: 20px;
     font-size: 0.9em;
     color: #777;
-    margin-top: 20px;
 }
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #003f7f;
+    text-decoration: underline;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+
+
+
