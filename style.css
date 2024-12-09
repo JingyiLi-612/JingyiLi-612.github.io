@@ -1,172 +1,99 @@
-* {
-	padding:0;
-	margin:0;
-}
-
+/* General Styles */
 body {
-	color: #333333;
-	background-color:#FFFFFF;
-    background-image: url("bg.png");
-	font-family:Carlito; sans-serif;
-	font-size:100%;
-	margin:20px auto;
-	width:80%;
-    padding-left:10px;
-    padding-right:10px;
+    font-family: "Arial", sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
 }
 
-h1, h2, h3, h4, h5, h6, p, pre, blockquote, label, ul, ol, dl, 
-fieldset, address { margin:0.75em 0;}
-
-h1 {font-size:167%;}
-
-h2 {font-size:139%;}
-
-h3 {font-size:120%;}
-
-h4 {font-size:100%;}
-
-li, dd { 
-	margin-left:2em;
+/* Container */
+#container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-a {
-        color: #3366CC;
-        /*background-color: #FFFFFF;*/
-        font-weight: normal;
-        text-decoration: none;
-	    outline:none;
+/* Navigation Bar */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #444;
+    padding: 10px 0;
+    margin: 0 0 20px 0;
 }
 
-a:hover {
-        color: #0033CC;
-        /*background-color: #FFFFFF;*/
-        font-weight: normal;
-        text-decoration: underline;
+nav ul li {
+    margin: 0 15px;
 }
 
-.image_paragraph_right {
-	float: right;
-	margin-top:0px;
-	margin-left:20px;
-	margin-bottom:5px;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.image_paragraph_left {
-	float: left;
-	margin-top:0px;
-	margin-right:20px;
-	margin-bottom:5px;
+nav ul li a:hover {
+    color: #f9f9f9;
+    text-decoration: underline;
 }
 
-.image_section_right {
-	float: right;
-	margin-top:20px;
-	margin-left:20px;
-	margin-bottom:10px;
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.image_section_left {
-	float: left;
-	margin-top:20px;
-	margin-right:20px;
-	margin-bottom:10px;
+header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
 }
 
-#title {
-        color:black;
-        /*background-color:#FFFFFF;*/
-        font-size:200%;
-        font-weight:normal;
-	    margin:0px 0px 10px 0px;
-        float:left;
+header p {
+    font-size: 1.2em;
+    color: #555;
 }
 
-#slogan {
-	color:#000000;
-	background-color:#FFFFFF;
-	font-size:small;
-	font-weight:bold;
-	padding:18px 0px 0px 50px;
-	float:left;
-	margin:0px 0px 10px 0px;
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    margin: 10px auto;
+    display: block;
 }
 
-ul#nav {
-	clear:both;
-	float:left;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	width:70%;
+/* Section Styling */
+section {
+    margin-bottom: 20px;
 }
 
-ul#nav li {
-	margin: 0;
-	padding: 0;
-	float: left;
-	width:10%; /*14.285%;*/
-	text-align: center;
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #444;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
 }
 
-ul#nav li a {
-	display: block;
-	font-size: medium;
-	color: #FFFFFF;
-	font-weight: bold;
-	text-decoration: none;
-	background: #9370db; /*#5588CC;*/
-	padding: 2px 0px 2px 0px;
+section ul {
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
-ul#nav li a:hover { background: #3366CC; color: #FFFFFF; }
-ul#nav a.selected:link { background: #3366CC; color: #FFFFFF; }
-ul#nav a.selected:visited { background: #3366CC; color: #FFFFFF; }
-
-#maincontent {
-	font-size:100%;
-	padding:0px 5px 5px 0px;
-	margin:10px 0px 10px 0px;
-	width:90%;
-	float:left;
+section ul li {
+    margin-bottom: 5px;
 }
 
-
-#footer {
-	color:#000000;
-	background-color:#FFFFFF;
-	border-top:1px solid black;
-	font-size:80%;
-	line-height:1.5em;
-	width: 90%;
-	clear:both;
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 20px;
 }
-
-#footer a {
-        color:#3366CC;
-        background-color:#FFFFFF;
-        text-decoration: none;
-}
-
-#footer a:hover {
-        color:#0033CC;
-        background-color:#FFFFFF;
-        font-weight: normal;
-        text-decoration: underline;
-}
-
-#copyright {
-	color:#000000;
-	background-color:#FFFFFF;
-	padding:5px 20px 5px 0px;
-	float:left;
-}
-
-#footercontact {
-	color:black;
-	background-color:#FFFFFF;
-	padding:5px 0px 5px 0px;
-	float:right;
-}
-
-
