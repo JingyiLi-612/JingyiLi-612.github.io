@@ -185,4 +185,53 @@ footer {
 
 
 
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+    /* Header Content: Stack photo and text vertically */
+    .header-content {
+        flex-direction: column;
+        align-items: center; /* Center-align for better aesthetics */
+        text-align: center;
+    }
+
+    /* Adjust Profile Photo Size */
+    .profile-photo {
+        width: 120px; /* Smaller photo size for phones */
+        height: 120px;
+    }
+
+    /* Adjust Text Content */
+    .text-content h1 {
+        font-size: 1.8em; /* Slightly smaller font for name */
+    }
+
+    .text-content p {
+        font-size: 1em; /* Adjust font size for details */
+    }
+
+    /* Publications Section */
+    .publications-container {
+        flex-direction: column; /* Stack image and content */
+        align-items: center;
+    }
+
+    .publications-image {
+        margin-bottom: 10px; /* Add space below the image */
+    }
+
+    .publication-photo {
+        width: 100%; /* Full width for small screens */
+        max-width: 300px; /* Limit maximum size */
+    }
+
+    /* Social Links */
+    .social-links {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;
+    }
+
+    .social-links a {
+        margin-bottom: 10px; /* Add space between links */
+    }
+}
 
