@@ -55,16 +55,31 @@ header {
     gap: 20px; /* Space between the photo and text */
 }
 
+/*.photo-content {*/
+/*    flex: 0 0 auto; */ /* Prevent photo from stretching */
+/*}*/
+
+
 .photo-content {
-    flex: 0 0 auto; /* Prevent photo from stretching */
+    width: 180px;
+    height: 180px;      /* 正方形 */
+    overflow: hidden;   /* 裁剪 */
+    border-radius: 50%;
 }
 
+
+/*.profile-photo {*/
+/*    width: 200px;*/ /* Increase the width */
+/*    height: 200px;*/ /* Match height to width for a perfect circle */
+/*    border-radius: 50%;*/ /* Keep the photo circular */
+/*    border: 3px solid #ddd;*/ /* Optional: Border styling */
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/ /* Optional: Shadow for aesthetics */
+/*}*/
+
 .profile-photo {
-    width: 200px; /* Increase the width */
-    height: 200px; /* Match height to width for a perfect circle */
-    border-radius: 50%; /* Keep the photo circular */
-    border: 3px solid #ddd; /* Optional: Border styling */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for aesthetics */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* 自动裁剪填满 */
 }
 
 
