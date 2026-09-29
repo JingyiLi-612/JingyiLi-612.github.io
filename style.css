@@ -175,6 +175,10 @@ footer {
 }
 
 .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: 10px;
 }
 
@@ -193,6 +197,7 @@ footer {
 }
 
 .social-icon {
+    flex-shrink: 0;
     width: 20px;
     height: 20px;
     margin-right: 5px;
@@ -249,4 +254,3 @@ footer {
         margin-bottom: 10px; /* Add space between links */
     }
 }
-
